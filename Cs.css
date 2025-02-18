@@ -70,6 +70,10 @@ html{
   }
   .news .newsHeader{
     font-size: 28px !important;
+    margin-left: 10px !important;
+  }
+  .nwBt, .cardWr{
+    margin-left: 20px !important;
   }
   .cardNw{
     /* padding-top: 1px !important; */
@@ -87,11 +91,11 @@ html{
   .part3{
     font-size: 28px !important;
     margin-top: 150px !important;
-    margin-left: 20px !important;
+    margin-left: 30px !important;
   }
   .part5{
     margin-top: 10px !important;
-    margin-left: 20px !important;
+    margin-left: 30px !important;
     font-size: 16px !important;
   }
   .carousel-inner{
