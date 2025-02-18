@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Cs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100&display=swap"
+        rel="stylesheet">
+    <title>О компании</title>
+</head>
+
+<body>
+  <!-- новое -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="porydok.html">Порядок</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info.html">Информация</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="infoOrg.html">Раскрытие информации организацией</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tarif.html">Тарифы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navbarF navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container d-flex align-items-center justify-content-between">
+        <div class="collapse navbar-collapse d-flex justify-content-start" id="navbarLeft">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="porydok.html">Порядок</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">Информация</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="logo-box d-flex align-items-center">
+            <a href="index.html">
+                <img src="https://static.tildacdn.com/tild3865-6335-4935-b534-373039643432/_-01.svg"
+                    style="max-width: 200px; width: 200px; height: 200px;" alt="Company">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarRight">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="infoOrg.html">Раскрытие информации организацией</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tarif.html">Тарифы</a>
+                </li>
+            </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+            aria-controls="navbarLeft navbarRight" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+  <div class="Me container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="card-bodyCP">
+          <h5 class="card-title">О компании</h5>
+          <p class="card-text">
+            Мы занимаемся заключением и реализацией концессионных соглашений в сфере теплоснабжения, водоснабжения и водоотведения
+          </p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Свяжитесь с нами</button>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Заявка</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Электронная почта</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Номер телефона</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">ФИО</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Ваше сообщение</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                  <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="imageKarta col-md-6 text-center">
+        <img class="img-fluidCP"
+          src="https://static.tildacdn.com/tild3665-3765-4930-b734-346531376236/___-01.svg"
+          alt="Тюменский коммунальный сервис" width="500" height="500">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="Sfer container mt-5">
+    <h2 class="nameSfer">Сфера деятельности</h2>
+    <p class="infoSfer">
+        ООО «Тюменский коммунальный сервис» — дочернее предприятие АО «СУЭНКО» создан в 2019 году с целью заключения и 
+        реализации концессионных соглашений в сфере теплоснабжения, водоснабжения и водоотведения. 
+        В рамках концессионных соглашений планируется модернизация объектов коммунального хозяйства районов Тюменской области.
+    </p>
+  </div>
+
+  <div class="RukRekvezit container mt-5">
+    <div class="row align-items-center">
+      <div class="logoMe col-md-6 text-center">
+        <img class="imgRuk" src="https://static.tildacdn.com/tild3333-3432-4539-a466-633463343065/____-01.svg"
+          alt="О компании">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="RukFull">Руководство и реквизиты</h5>
+          <p class="card-text">
+                <ul class="fullInfoCp">
+                    <li>
+                        Общество с ограниченной ответственностью "Тюменский коммунальный сервис" Сокращенное наименование: ООО "ТКС"
+                    </li>
+                    <li>
+                        Директор:
+                        Опарин Станислав Олегович, действующий на основании Устава, к.т. 8 3452 65-23-56<br>
+                        Главный бухгалтер:
+                        Ахкямова Ирина Геннадьевна, к.т. 8 3452 65-25-80<br>
+                        Зам. директора:
+                        Давыдов Евгений Леонидович, к.т. 8 3452 65-25-71
+                    </li>
+                    <li>
+                        Адрес: 625023, область Тюменская, город Тюмень, улица Одесская, дом 14, кабинет 408<br>
+                        Электронный адрес:office@tks72.ru<br>
+                        ОГРН: 1197232007400<br>
+                        ИНН: 7203475098<br>
+                        КПП: 720301001<br>
+                        ОКВЭД: 35.30.1<br>
+                        ОГРН: 1197232007400<br>
+                        ОКПО: 36704573<br>
+                        ОКАТО: 71401368000<br>
+                        ОКОГУ: 4210014<br>
+                        ОКФС: 16<br>
+                        ОКОПФ: 12300
+                    </li>
+                    <li>
+                        Расчетный счет: № 40702810470000002665
+                        БИК: 044525710
+                        Кор. счет: 30101810545250000710
+                    </li>
+                    <li>
+                        АО КБ «АГРОПРОМКРЕДИТ» г.Москва
+                        ИНН 5026014060
+                    </li>
+                    <li>
+                        <a href="">Карточка предприятия</a><br>
+                        <a href="">Свидетельство о постановке на учет</a><br>
+                        <a href="">Устав предприятия</a><br>
+                    </li>
+                </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="Vakans container mt-5">
+    <h2 class="Rabota">Работа у нас</h2>
+    <h4 class="Slesar">Слесарь КИПиА</h4>
+    <h5 class="Obyz">Обязанности:</h5>
+    <ul>
+        <li>
+            1. Наладка сложных и простых электронных приборов, предназначенных для выполнения контрольно-измерительных функций.<br>
+            2. Ввод и сдача в эксплуатацию новой контрольно - измерительные аппаратуры.<br>
+            3. Выявление дефектов в контрольно-измерительной аппаратуре и принятие мер по их устранению.<br>
+            4. Проведение профилактических мероприятий по аппаратуре в своей зоне ответственности, в том числе по сложным приборам и системам управления оборудованием.<br>
+            5. Комплексное техобслуживание сложных приборов и систем управления оборудования.<br>
+            6. Выполнение работ по режимной наладке теплового оборудования.<br>
+            7. Наладка теплового и горелочного оборудования для максимального повышения КПД.<br>
+            8. Осуществление необходимых профильных расчетов.
+        </li>
+    </ul>
+    <h5 class="treb">Требования:</h5>
+    <ul>
+        <li>
+            1. Среднее образование общего или технического направления.<br>
+            2. Стаж работы не менее одного года.<br>
+            3. 3 группа допуска по электробезопасности
+        </li>
+    </ul>
+    <h5 class="uslov">Условия:</h5>
+    <ul>
+        <li>
+            1. График работы – 5-дневная рабочая неделя с 8.00 до 17.00, сб и вск – выходные дни.<br>
+            2. Оформление по ТК РФ, з/п – по договоренности.
+        </li>
+    </ul>
+  </div>
+
+  <div class="news">
+    <div ">
+      <h5 class="newsInCp">Новости компании</h5>
+      <p class="newsInCpP">Мы максимально открыты и стараемся делиться полезной информацией с нашими клиентами</p>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row row-cols-2">
+      <div class="cardNw" style="width: 18rem;">
+        <a class="nwBt" href="">
+          <img src="https://static.tildacdn.com/tild6265-3939-4234-a664-313833663839/kotel.jpg" class="card-img-top"
+            alt="">
+          <div class="cardWr text-align: left">
+            <h5 class="cardNwH">Новое качество ЖКХ</h5>
+            <p class="cardNwp">Компания ТКС начинает работу в Ярковском районе Тюменской области</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardNw" style="width: 18rem;">
+        <a class="nwBt" href="">
+          <img
+            src="https://optim.tildacdn.com/tild3238-3661-4663-b535-336136373234/-/cover/312x240/center/center/-/format/webp/992x496.jpg"
+            class="card-img-top" alt="">
+          <div class="cardWr text-align: left">
+            <p class="cardNwp">«Тюменский коммунальный сервис» готовится к завершению отопительного сезона в Ярковском
+              районе</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardNw" style="width: 18rem;">
+        <a class="nwBt" href="">
+          <img
+            src="https://optim.tildacdn.com/tild6265-6539-4538-b032-386433636562/-/cover/312x240/center/center/-/format/webp/1bca3d880d37e447f78d.jpg"
+            class="card-img-top" alt="">
+          <div class="cardWr text-align: left">
+            <p class="cardNwp">Ярковские коммунальщики тушат пожары</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardNw" style="width: 18rem;">
+        <a class="nwBt" href="">
+          <img
+            src="https://optim.tildacdn.com/tild3538-6562-4437-a334-376532623831/-/cover/312x240/center/center/-/format/webp/IMG_20220512_113953.jpg"
+            class="card-img-top" alt="">
+          <div class="cardWr text-align: left">
+            <p class="cardNwp">Завершился отопительный сезон 2021-2022 г в Ярковском районе Тюменской области</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardNw" style="width: 18rem;">
+        <a class="nwBt" href="">
+          <img
+            src="https://optim.tildacdn.com/tild3434-3363-4530-b733-336563643131/-/cover/312x240/center/center/-/format/webp/IMG_8153.JPG"
+            class="card-img-top" alt="">
+          <div class="cardWr text-align: left">
+            <p class="cardNwp">Ярковский район ждет масштабный коммунальный ремонт</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardNw" style="width: 18rem;">
+        <a class="nwBt" href="">
+          <img
+            src="https://optim.tildacdn.com/tild3661-3032-4733-a534-343331346531/-/cover/312x240/center/center/-/format/webp/_2.jpeg"
+            class="card-img-top" alt="">
+          <div class="cardWr text-align: left">
+            <p class="cardNwp">На реконструкцию системы теплоснабжения Исетского района затратят 1,1 млрд рублей</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardNw" style="width: 18rem;">
+        <a class="nwBt" href="">
+          <img
+            src="https://optim.tildacdn.com/tild3636-6662-4861-a237-336637326562/-/cover/312x240/center/center/-/format/webp/photo_2024-01-12_16-.jpg"
+            class="card-img-top" alt="">
+          <div class="cardWr text-align: left">
+            <p class="cardNwp">«Тюменский коммунальный сервис» устранил аварию в с. Исетское</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardNw" style="width: 18rem;">
+        <a class="nwBt" href="">
+          <img
+            src="https://optim.tildacdn.com/tild3366-6165-4762-b535-316339616563/-/cover/312x240/center/center/-/format/webp/_.jpg"
+            class="card-img-top" alt="">
+          <div class="cardWr text-align: left">
+            <p class="cardNwp">Директор ТКС Станислав Опарин: замечаний по работе оборудования и котельных Ярковского
+              района в период низких температур не зафиксировано</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
