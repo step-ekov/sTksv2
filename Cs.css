@@ -73,7 +73,7 @@ html{
     margin-left: 10px !important;
   }
   .nwBt, .cardWr{
-    margin-left: 20px !important;
+    margin-left: -30px !important;
   }
   .cardNw{
     /* padding-top: 1px !important; */
@@ -90,7 +90,7 @@ html{
   }
   .part3{
     font-size: 28px !important;
-    margin-top: 150px !important;
+    margin-top: 100px !important;
     margin-left: 30px !important;
   }
   .part5{
@@ -104,7 +104,7 @@ html{
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    padding-top: 100px !important;
+    padding-top: 70px !important;
   }
   .btnEX{
     background-color: #00466c !important;
@@ -147,10 +147,10 @@ html{
     color: #00466c;
   }
   .Rabota, .Slesar, .Obyz, .treb, .uslov{
-    padding-left: 30px !important;
+    padding-left: 20px !important;
   }
   .newsInCp, .newsInCpP{
-    padding-left: 20px !important;
+    padding-left: 10px !important;
   }
   .newsInCp{
     color: #00466c !important;
