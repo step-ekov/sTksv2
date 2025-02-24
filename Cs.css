@@ -28,18 +28,161 @@ html{
   display: none;
 }
 
-@media (max-width: 768px) {
-  /* html {
-      font-size: 16px;
-  } */
-  .navbar {
-    display: none;
-    /* background-color: rgb(22,100,156);
-    top: 0;
-    left: 0;*/
+@media (max-width: 992px) {
+  .fixed-top {
+    position: static !important;  /* Для мобильных устройств отменяем фиксированное положение */
+  }
+  .collapse{
+    /* padding-top: 5px !important; */
+    justify-content: start !important;
+  }
+  .logo-box{
+    top: 5% !important;
+    align-items: start !important;
+  }
+  .logo-box a img{
+    vertical-align: top !important;
+    position: fixed !important;
+    left: 100% !important; /* Логотип начинает с правой границы */
+    transform: translate(135%, -80%) !important; /* Центрируем относительно правой границы */
+    width: 20vw !important; /* Ширина логотипа 10% от ширины окна */
+    height: auto !important; /* Высота логотипа пропорциональна ширине */
+    z-index: 15 !important; /* Чтобы логотип не был скрыт */
   }
   .navbarF{
-    display: block;
+    display: none;
+  }
+  .nav-link{
+    font-size: 16px;
+    color: rgb(214, 213, 213);
+    font-weight: bold;
+  }
+  .card-title{
+    font-weight: bold;
+    font-size: 28px !important;
+    color: #00466c;
+  }
+  .card-text{
+    font-size: 16px !important;
+  }
+  .card-body{
+    position: relative !important;
+    margin-top: 30px !important;
+    margin-left: 1px !important;
+    /* padding-left: 1px !important;
+    padding-top: 1px !important; */
+  }
+  .imageKarta{
+    margin-top: 10px !important;
+  }
+  .news{
+    margin-top: 150px !important;
+  }
+  .news .newsHeader{
+    font-size: 28px !important;
+  }
+  .nwBt, .cardWr{
+    margin-left: -30px !important;
+  }
+  .cardNw{
+    /* padding-top: 1px !important; */
+    padding-left: 60px !important;
+    font-size: 14px !important;
+    color: black !important;
+    font-weight: bold !important;
+  }
+  .logoMe{
+    padding-top: 150px !important;
+  }
+  .part3{
+    font-size: 28px !important;
+    margin-top: 5px !important;
+    margin-left: 30px !important;
+  }
+  .part5{
+    margin-top: 10px !important;
+    margin-left: 30px !important;
+    font-size: 16px !important;
+  }
+  .carousel-inner{
+    width: 200px !important;
+    height: 200px !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 70px !important;
+  }
+  .btnEX{
+    background-color: #00466c !important;
+    margin-top: 25px !important;
+    margin-left: 60px !important;
+    border: #00466c !important;
+    width: 70px !important;
+    height: 35px !important;
+    border-radius: 5% !important;
+  }
+  .infoP{
+    margin-top: 15px !important;
+  }
+  .card-bodyCP, .img-fluidCP{
+    margin-top: 50px !important;
+    padding-left: 30px !important;
+  }
+  .img-fluidCP{
+    width: 300px !important;
+    height: auto !important;
+    margin-top: 10px !important;
+  }
+  .RukFull{
+    color: #00466c !important;
+    font-size: 28px !important;
+  }
+  .fullInfoCp{
+    font-size: 18px !important;
+  }
+  .RukFull, .fullInfoCp{
+    margin-top: 30px !important;
+    padding-left: 10px !important;
+  }
+  .nameSfer, .infoSfer{
+    margin-top: 30px !important;
+    padding-left: 30px !important;
+  }
+  .nameSfer{
+    margin-top: 100px !important;
+  }
+  .Rabota{
+    margin-top: 100px !important;
+    color: #00466c;
+  }
+  .Rabota, .Slesar, .Obyz, .treb, .uslov{
+    padding-left: 20px !important;
+  }
+  .newsInCp, .newsInCpP{
+    padding-left: 20px !important;
+  }
+  .newsInCp{
+    color: #00466c !important;
+    margin-top: 100px !important;
+    font-size: 28px !important;
+  }
+  .newsInCpP{
+    font-size: 18px !important;
+  }
+  .container{
+    margin-top: 30px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+      font-size: 16px;
+  }
+  .navbar {
+    display: none !important;
+  }
+  .navbarF{
+    display: block !important;
   }
   .nav-link{
     font-size: 16px;
@@ -63,14 +206,10 @@ html{
   }
 
   .news{
-    /* top: 10% !important;
-    right: 90% !important; */
-    margin-left: 20px !important;
     margin-top: 150px !important;
   }
   .news .newsHeader{
     font-size: 28px !important;
-    margin-left: 10px !important;
   }
   .nwBt, .cardWr{
     margin-left: -30px !important;
@@ -212,7 +351,6 @@ html{
 }
 
 .news{
-    margin-left: 300px;
     margin-top: 100px;
 }
 
@@ -252,14 +390,14 @@ html{
 
 .part3{
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 5px;
 }
 
 .part5{
     font-size: 18px;
     color: black;
     font-family: Arial;
-    margin-left: 300px;
+    margin-left: 5px;
     margin-top: 25px;
 }
 
@@ -357,38 +495,30 @@ ul, .infoP{
 .card-bodyCP, .img-fluidCP{
   margin-top: 150px;
 }
-
 .nameSfer{
   color: #00466c;
 }
-
 .nameSfer, .infoSfer{
   margin-top: 200px;
 }
-
 .infoSfer{
   margin-top: 30px;
   margin-right: 100px;
 }
-
 .RukFull{
   font-size: 36px;
   padding-left: 35px;
 }
-
 .RukFull, .fullInfoCp{
   margin-top: 30px;
 }
-
 .imgRuk{
   margin-top: -150px;
 }
-
 .Rabota{
   margin-top: 220px;
   color: #00466c;
 }
-
 .Slesar, .Obyz{
   margin-top: 30px;
 }
@@ -398,7 +528,6 @@ ul, .infoP{
   margin-top: 200px;
   font-size: 36px;
 }
-
 .newsInCpP{
   font-size: 20px;
 }
