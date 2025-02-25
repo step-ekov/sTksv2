@@ -30,7 +30,7 @@ html{
 
 @media (max-width: 992px) {
   .fixed-top {
-    position: static !important;  /* Для мобильных устройств отменяем фиксированное положение */
+    position: static !important;
   }
   .collapse{
     /* padding-top: 5px !important; */
@@ -169,9 +169,9 @@ html{
   .newsInCpP{
     font-size: 18px !important;
   }
-  .container{
+  /* .container{
     margin-top: 30px !important;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
@@ -207,9 +207,14 @@ html{
 
   .news{
     margin-top: 150px !important;
+    padding-left: 20px !important;
   }
   .news .newsHeader{
     font-size: 28px !important;
+  }
+  .newsHeader{
+    margin-left: 10px !important;
+    margin-top: 150px;
   }
   .nwBt, .cardWr{
     margin-left: -30px !important;
@@ -353,7 +358,9 @@ html{
 .news{
     margin-top: 100px;
 }
-
+.newsHeader{
+  margin-top: 150px;
+}
 .newsHeader, .part3{
     font-size: 42px;
     font-weight: bold;
