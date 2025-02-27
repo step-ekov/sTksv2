@@ -10,13 +10,11 @@ html{
     margin-left: 5px;
     font-weight: bold;
 }
-
 .nav-link:hover{
     font-size: 16px;
     color: rgb(214, 213, 213);
     font-weight: bold;
 }
-
 .navbar{
     background-color: rgb(22,100,156);
     top: 0;
@@ -28,7 +26,72 @@ html{
   display: none;
 }
 
+.map-point {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: #00466c;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+.text {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-60%);
+  white-space: nowrap;
+  font-size: 18px;
+  color: #0371ac;
+  font-weight: bold;
+}
+.blur-overlay {
+  position: absolute;
+  top: -20px;
+  left: -110px;
+  width: 700px;
+  height: 180px;
+  background: rgba(253, 247, 247, 0.699);
+  backdrop-filter: blur(35px);
+  pointer-events: none;
+
+  mask-image: radial-gradient(circle, rgba(253, 247, 247, 0.884) 40%, rgba(255, 255, 255, 0) 100%);
+  -webkit-mask-image: radial-gradient(circle, rgba(253, 247, 247, 0.884) 40%, rgba(255, 255, 255, 0) 100%);
+}
+
 @media (max-width: 992px) {
+  .map-point {
+    position: absolute !important;
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #00466c !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  .text {
+    position: absolute !important;
+    top: 10px !important;
+    left: 50% !important;
+    transform: translateX(-60%) !important;
+    white-space: nowrap !important;
+    font-size: 10px !important;
+    color: #0371ac !important;
+    font-weight: bold !important;
+  }
+  .blur-overlay {
+    position: absolute;
+    top: -20px !important;
+    left: -90px !important;
+    width: 400px !important;
+    height: 107px !important;
+    background: rgba(253, 247, 247, 0.699) !important;
+    backdrop-filter: blur(35px) !important;
+    pointer-events: none !important;
+  
+    mask-image: radial-gradient(circle, rgba(253, 247, 247, 0.884) 40%, rgba(255, 255, 255, 0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(253, 247, 247, 0.884) 40%, rgba(255, 255, 255, 0) 100%);
+  }
   .fixed-top {
     position: static !important;
   }
@@ -43,11 +106,11 @@ html{
   .logo-box a img{
     vertical-align: top !important;
     position: fixed !important;
-    left: 100% !important; /* Логотип начинает с правой границы */
-    transform: translate(135%, -80%) !important; /* Центрируем относительно правой границы */
-    width: 20vw !important; /* Ширина логотипа 10% от ширины окна */
-    height: auto !important; /* Высота логотипа пропорциональна ширине */
-    z-index: 15 !important; /* Чтобы логотип не был скрыт */
+    left: 100% !important;
+    transform: translate(135%, -80%) !important;
+    width: 20vw !important;
+    height: auto !important;
+    z-index: 15 !important;
   }
   .navbarF{
     display: none;
@@ -184,6 +247,38 @@ html{
   .navbarF{
     display: block !important;
   }
+  .map-point {
+    position: absolute !important;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #00466c !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  .text {
+    position: absolute !important;
+    top: 10px !important;
+    left: 50% !important;
+    transform: translateX(-60%) !important;
+    white-space: nowrap !important;
+    font-size: 12px !important;
+    color: #0371ac !important;
+    font-weight: bold !important;
+  }
+  .blur-overlay {
+    position: absolute;
+    top: -20px !important;
+    left: -90px !important;
+    width: 400px !important;
+    height: 120px !important;
+    background: rgba(253, 247, 247, 0.699) !important;
+    backdrop-filter: blur(35px) !important;
+    pointer-events: none !important;
+  
+    mask-image: radial-gradient(circle, rgba(253, 247, 247, 0.884) 40%, rgba(255, 255, 255, 0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(253, 247, 247, 0.884) 40%, rgba(255, 255, 255, 0) 100%);
+  }
   .nav-link{
     font-size: 16px;
     color: rgb(214, 213, 213);
@@ -204,7 +299,6 @@ html{
     /* padding-left: 1px !important;
     padding-top: 1px !important; */
   }
-
   .news{
     margin-top: 150px !important;
     padding-left: 20px !important;
@@ -306,7 +400,6 @@ html{
     font-size: 18px !important;
   }
 }
-
 .logo-box{
     position: absolute;
     top: 40%;
@@ -315,25 +408,21 @@ html{
     padding: 20px 30px;
     z-index: 15;
 }
-
 .card-body{
     margin-top: 50px;
     margin-left: 50px;
 }
-
 .content-container {
     padding-top: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .card-title{
     font-weight: bold;
     font-size: 56px;
     color: #00466c;
 }
-
 .btn{
     border: #00466c;
     background-color: #00466c;
@@ -341,20 +430,17 @@ html{
     font-size: 16px;
     height: 40px;
 }
-
 .btn:hover{
     background-color: red;
     transition: all 0.5s ease-out;
 }
-
 .imageKarta{
     margin-top: 80px;
+    position: relative;
 }
-
 .logoMe{
     padding-top: 250px;
 }
-
 .news{
     margin-top: 100px;
 }
@@ -366,26 +452,22 @@ html{
     font-weight: bold;
     color: #00466c;
 }
-
 .cardNw{
     margin-top: 30px;
     font-size: 14px;
     color: black;
     font-weight: bold;
 }
-
 .nwBt{
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
-
 .nwBt:hover{
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
-
 .carousel-inner{
     width: 300px;
     height: 300px;
@@ -394,20 +476,18 @@ html{
     margin-right: auto;
     padding-top: 100px;
 }
-
 .part3{
     margin-top: 100px;
     margin-left: 5px;
 }
-
 .part5{
     font-size: 18px;
     color: black;
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
     margin-left: 5px;
     margin-top: 25px;
+    font-weight: normal;
 }
-
 .card-title, .card-text, .btn {
     opacity: 0;
     animation: card-title ease-in 1;
@@ -415,8 +495,8 @@ html{
     animation: btn ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 1s;
+    font-family: 'Roboto', sans-serif;
   }
-  
   @keyframes card-title {
     0% {
       opacity: 0;
@@ -425,7 +505,6 @@ html{
       opacity: 1;
     }
   }
-
   @keyframes card-text {
     0% {
       opacity: 0;
@@ -434,7 +513,6 @@ html{
       opacity: 1;
     }
   }
-
   @keyframes btn {
     0% {
       opacity: 0;
@@ -455,18 +533,15 @@ html{
     height: 35px;
     border-radius: 5%;
 }
-
 .infoP h2{
     color: rgb(9, 94, 155);
     font-size: 22px;
     font-weight: bold;
 }
-
 .punkt{
     margin-top: 20px;
     font-weight: bold;
 }
-
 .punkt a{
     color: rgb(11, 122, 201);
     text-decoration: none;
@@ -504,8 +579,10 @@ ul, .infoP{
 }
 .nameSfer{
   color: #00466c;
+  font-weight: bold;
 }
 .nameSfer, .infoSfer{
+  font-family: 'Roboto', sans-serif;
   margin-top: 200px;
 }
 .infoSfer{
@@ -522,24 +599,25 @@ ul, .infoP{
 .imgRuk{
   margin-top: -150px;
 }
+.Rabota, .Slesar, .Obyz, .podrob, .treb, .uslov{
+  font-family: 'Roboto', sans-serif;
+}
 .Rabota{
+  font-weight: bold;
   margin-top: 220px;
   color: #00466c;
 }
 .Slesar, .Obyz{
   margin-top: 30px;
 }
-
 .newsInCp{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   color: #00466c;
   margin-top: 200px;
   font-size: 36px;
 }
 .newsInCpP{
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
-/* */
-
-/* @media screen and (max-width: 1280px) { div.navbar {width: 1200px;} }
-@media screen and (max-width: 1140px) { div.navbar {width: 1024px;} }
-@media screen and (max-width: 992px) { div.navbar {width: 970px;} } */
